@@ -82,7 +82,7 @@ STRONG_KEYWORDS = [
 EXCLUDE_WORDS = [
     "climate", "sports", "war", "fashion",
     "lifestyle", "movie", "celebrity",
-    "music", "art"
+    "music", "art", "lifestyle", "art-fashion"
 ]
 
 def is_relevant(title):
