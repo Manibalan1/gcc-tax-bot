@@ -11,7 +11,7 @@ import os
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- WEBHOOK FROM GITHUB SECRET ---
-WEBHOOK_URL = os.getenv("https://cliq.zoho.in/api/v2/channelsbyname/gcctaxnews/message?zapikey=1001.68210090936d3eddb81586cf61b1f692.48a7b6f3d5c38800b6e892f743b95f97")
+WEBHOOK_URL = "https://cliq.zoho.in/api/v2/channelsbyname/gcctaxnews/message?zapikey=1001.68210090936d3eddb81586cf61b1f692.48a7b6f3d5c38800b6e892f743b95f97"
 
 # --- JS SITES ---
 JS_SITES = [
