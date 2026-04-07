@@ -2,7 +2,7 @@ name: GCC Tax News Bot
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # runs daily at 6 AM UTC
+    - cron: '30 3 * * *' # This is 9:00 AM India Time
   workflow_dispatch:
 
 jobs:
