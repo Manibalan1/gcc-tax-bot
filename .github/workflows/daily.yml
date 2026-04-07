@@ -2,7 +2,7 @@ name: GCC Tax News Bot
 
 on:
   schedule:
-    - cron: '30 3 * * *' # This is 9:00 AM India Time
+    - cron: '30 3 * * *'
   workflow_dispatch:
 
 jobs:
@@ -24,8 +24,10 @@ jobs:
 
       - name: Install Playwright browsers
         run: |
-          playwright install
+          python -m playwright install --with-deps
 
       - name: Run bot
+        env:
+          ZOHO_WEBHOOK: ${{ secrets.ZOHO_WEBHOOK }}
         run: |
           python main.py
